@@ -1,0 +1,106 @@
+
+        .menu {
+            background: url(../img/bg/menu.jpg) 50% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    
+      
+        .menu__title {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+        
+       
+        
+        .menu-acco {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        .menu-acco:after, .nav__list:after, .order__form:after, .team-acco__content:after {
+            clear: both;
+        }
+        .menu-acco:after, .menu-acco:before, .nav__list:after, .nav__list:before, .order__form:after, .order__form:before, .team-acco__content:after, .team-acco__content:before {
+            content: "";
+            display: table;
+        }
+        
+        .menu-acco__item {
+            float: left;
+            height: 100%;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        * {
+            box-sizing: border-box;
+        }
+      
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        .menu-acco__trigger {
+            width: 5rem;
+            display: block;
+            height: 100%;
+            float: left;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        .menu-acco__trigger-text {
+            font-size: 2.5rem;
+            color: #fff;
+            font-family: Gagalin-Regular,Helvetica,sans-serif;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            text-align: center;
+            white-space: nowrap;
+            width: 40.625rem;
+            height: 5rem;
+            position: absolute;
+            top: 50%;
+            left: -17.1875rem;
+            margin-top: -2.5rem;
+        }
+        .menu-acco__content {
+            height: 100%;
+            float: left;
+            background: rgba(47,50,52,.93);
+            width: 0;
+            overflow: hidden;
+        }
+        .menu-acco__text {
+            font-family: Ubuntu,Helvetica,sans-serif;
+            font-weight: 300;
+            font-size: .875rem;
+            color: #fff;
+            padding: 3.75rem 1.875rem;
+            width: 34.375rem;
+            line-height: 1.8;
+        }
+        .menu-acco:after, .nav__list:after {
+            clear: both;
+        }
+        
+        .menu-acco:after, .menu-acco:before, .nav__list:after, .nav__list:before, .order__form:after, .order__form:before, .team-acco__content:after, .team-acco__content:before {
+            content: "";
+            display: table;
+        }

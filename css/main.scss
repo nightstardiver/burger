@@ -1,0 +1,135 @@
+$hd: 1200px;
+$laptop: 992px;
+        $phones : 480px;
+$tablets: 760px; 
+
+
+    
+    @mixin tablets {
+        @media screen and (max-width:  $tablets){
+@content;
+        }
+    } 
+
+    @mixin phones {
+        @media screen and (max-width: $phones){
+@content;
+        }
+    }
+
+@font-face {
+    font-family: Gagalin-Regular;
+    src: url(../fonts/Gagalin-Regular.otf);
+    font-weight: 400;
+    font-style: normal; }
+  @font-face {
+    font-family: Lifehack-Medium;
+    src: url(../fonts/Lifehack-Medium.otf);
+    font-weight: 400;
+    font-style: normal; }
+  @font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-weight: 300;
+    font-style: normal; }
+  @font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+    font-weight: 500;
+    font-style: normal; }
+  @font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/ubuntu-b-webfont.woff);
+    font-weight: 700;
+    font-style: normal; }
+
+  html{
+      font-size: rem(16px);
+
+      @include phones{
+          font-size: 13px;
+      }
+
+      @include tablets{
+        font-size: 14px;
+    }
+  }
+  
+    body,html {
+        height: 100%;
+      }
+
+      .wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        min-width: 69.375rem;
+      }
+      
+
+    .maincontent {
+        height: 100%;
+        transition: 1s;
+        will-change: transform;
+        min-height: 40.625rem; }
+
+        .section {
+            height: 100vh;
+            min-height: 40.625rem;
+            position: relative;
+            display: -webkit-box;
+            display: flex;
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 1rem;
+            line-height: 1.42;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            font-family: Ubuntu,Helvetica,sans-serif;
+            font-weight: 300;
+            color: #2f3234;
+        }
+        .container {
+            margin: 0 auto;
+            position: relative;
+            width: 68.75rem;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+        }
+        article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+            display: block;
+        }
+        
+     
+        article, aside, footer, header, hgroup, main, nav, section {
+            display: block;
+        }
+        .section__title.section__title_white {
+            color: #fff;
+        }
+        .section__title {
+            color: #f9b43b;
+            font-size: 4.5rem;
+            font-family: Gagalin-Regular,Helvetica,sans-serif;
+            margin-bottom: .75rem;
+        }
+        div {
+            display: block;
+        }
+
+        .block{
+            width: rem(100px);
+        }
+
+  
+        
