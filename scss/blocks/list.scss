@@ -1,0 +1,22 @@
+      
+        //breakpoints
+        $hd: 1200px;
+$laptop: 992px;
+        $phones : 480px;
+$tablets: 760px; 
+
+
+    
+    @mixin tablets {
+        @media screen and (max-width: $tablets){
+@content;
+        }
+    } 
+
+    @mixin phones {
+        @media screen and (max-width: $phones){
+@content;
+        }
+    } 
+
+    
