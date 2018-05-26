@@ -1,0 +1,113 @@
+
+.reviews {
+    background: #000;
+    @include tablets {
+        min-height: 0px;
+      }
+}
+
+.reviews__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    width: 25%;
+    height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 25%;}
+}
+
+
+.review {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.review__photo {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    @include cover;
+    filter: grayscale(100%);
+}
+
+.review__hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%) scale(.7);
+    transform: translate(-50%, -50%) scale(.7);
+    opacity: 0;
+    padding: 17% 12% 0;
+    transition: .3s;
+    z-index: 1;
+    @include tablets {
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+}
+
+.review__title {
+    color: #fff;
+    font-family: Gagalin-Regular, Helvetica, sans-serif;
+    font-size: .875rem;
+    margin-bottom: 1.5625rem;
+    @include phones {
+        font-size: 20px;
+      }
+}
+
+
+.review__shorttext {
+    font-size: .875rem;
+    font-weight: 300;
+    margin-bottom: .8125rem;
+    @include tablets {
+        padding: 0 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+        @include phones {
+            display: none;
+          }
+}
+
+.review__view {
+    border-radius: .3125rem;
+    background-color: #2f3234;
+    padding: .5rem .75rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .75rem;
+    transition: .3s;
+}
+
+
+.review:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: .3s;
+}
