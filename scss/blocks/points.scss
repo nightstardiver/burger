@@ -1,0 +1,65 @@
+.points__list{
+  position: fixed;
+  top: rem(90px);
+  right: rem(40px);
+
+  @include tablets {
+    display: none;
+}
+}
+
+.points__link {
+  width: rem(16px);
+  height: rem(16px);
+  display: block;
+  position: relative;
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    @include centered();
+    border-radius: 50%;
+  }
+
+  &:after {
+    width: rem(6px);
+    height: rem(6px);
+    background: #fff;
+  }
+
+  &:before {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  &:hover {
+    &:before {
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+    }
+  }
+}
+
+.points__item {
+  &.active {
+    .points__link {
+      &:before {
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.points__item {
+  margin-bottom: 5px;
+
+}
+
+
